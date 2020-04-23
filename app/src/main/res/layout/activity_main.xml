@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeTxt"
+        android:text="Welcome !!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="150sp"
+        />
+    <EditText
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_login"
+        android:layout_below="@+id/welcomeTxt"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="85dp"
+        android:inputType="textEmailAddress"
+        android:hint="Input Your Email  here"
+        />
+    <EditText
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_login"
+        android:layout_below="@+id/email_login"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="85dp"
+        android:inputType="textPassword"
+        android:hint="Your Password goes here"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_login"
+        android:id="@+id/sign_btn"
+        android:text="Sign In"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="155dp"
+        android:onClick="login"
+        />
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_btn"
+        android:text="Register"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="105dp"
+        android:background="#fff"
+        android:onClick="go_to_register_intent"
+        />
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_btn"
+        android:text="Admin Login"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="105dp"
+        android:background="#fff"
+        android:onClick="login"
+        />
+
+</RelativeLayout>

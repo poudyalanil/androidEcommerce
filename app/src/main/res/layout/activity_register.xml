@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp"
+    tools:context=".register">
+    <TextView
+        android:id="@+id/greet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup here"
+        android:layout_marginStart="150sp"
+        />
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greet"
+        android:layout_marginTop="150sp"
+        android:layout_marginStart="85sp"
+        android:inputType="text"
+        android:hint="Enter your Name.."
+        />
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_name"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="85sp"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your Email.."
+
+        />
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_email"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="85sp"
+        android:inputType="textPassword"
+        android:hint="Enter your password.."
+
+        />
+    <Button
+        android:layout_width="250sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="70sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_password"
+        android:text="Regisister"
+        android:background="#fff"
+        android:onClick="sign_up"
+        />
+</RelativeLayout>
